@@ -1,0 +1,233 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Data Table</title>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+           <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css"/>  
+           <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script> 
+           <link rel="stylesheet" href="datatable.css"> 
+ 
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container"> 
+             
+                    <div class="row">
+                         <nav class="navbar list">
+                        
+                              <img src="sstlogo.jpg" class="img-fluid logo ">
+                       
+                       
+                        
+                                   <a href="Home.html" class=" link"> Home</a>
+                                   <a href="Features.html"  class="link">Features</a>
+                                   <a href="Pricing.html"  class="link">Pricing</a>
+                                   <a href="FAQs.html"  class="link">FAQs</a>
+                                   <a href="About.html"  class="link">About</a>
+               
+                              
+                        
+                              
+                           
+                                
+                                <button class="loginbtn tab" onclick="location.href='loginform.html'">Log In</button>
+                                <button class="signupbtn" onclick="signup.html">Sign Up</button>
+                              </nav> 
+                              </div>
+                              <div class="row  flexible">
+	
+                                   <div class="col-1 flexseperate">
+                                       <ul>
+                                            <li class="orders-icon"><i class="bi bi-basket3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
+                                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z"></path>
+                                            </svg></i></li>
+                                            <li id="order">ORDERS</li>
+                             
+                             
+                                            <li class="orders ">1,587</li>
+                                            <li class="text">
+                                                 <button class="rounded btn-primary percentage" value="+12%">+12%</button>From Previous Period
+                                            </li>
+                             
+                             
+                                       </ul>
+                                  </div>
+                                       <div class="col-1 flexseperate">
+                                       
+                                       <ul>
+                                       <li class="orders-icon"><i class="bi bi-archive"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                                            <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+                                       </svg></i></li>
+                                       <li id="revenue">REVENUE</li>
+                             
+                             
+                                       <li class="orders">$46,782</li>
+                                       <li class="text">
+                                            <button class="rounded btn-danger  percentage">-29%</button>From Previous Period
+                                       </li>
+                             
+                                  </ul>
+                             
+                             </div>
+                                  <div class="col-1 flexseperate">
+                                       <ul>
+                                       <li class="orders-icon"><i class="bi bi-gem"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                       </svg></li>
+                                       <li id="productsold">PRODUCT SOLD</li>
+                             
+                             
+                                       <li class="orders">1,890</li>
+                                       <li class="text">
+                                            <button class="rounded btn-primary  percentage">+33%</button>Last year
+                                       </li>
+                             
+                                  </ul>
+                             </div>
+                         </br>
+                    </br>
+               </br>
+               </div>
+                          
+                 <div  class="row">  
+                      
+                    
+                  
+                <h3 >Customer Database</h3><br />  
+                <table id="data-table" class="table display">  
+                     <thead>  
+                          <tr>  
+                            <th><b>OrderId</b></th>
+												
+
+                            <th><b>Customers</b></th>
+                            <th><b>Project</b></th>
+                            <th><b>Date Order</b></th>
+                            <th><b>Address</b></th>
+                            <th><b>OrderStatus</b></th>
+                            <th><b>Action</b></th>
+
+
+                          </tr>  
+                     </thead>  
+                </table>  
+               </div> 
+            
+           <div class="  row col-8"> 
+               <label class="label_radio">Radios</label><br>
+     
+                    
+                  <div class="form-check ">
+                       <input class="form-check-input resize1" type="radio" id="Radio1" name="Radio" onclick="popup()">
+                       <label class="form-check-label resize" for="Radio1">
+                            Toggle this custom radio 
+                       </label>
+                  </div>
+                  <div class="form-check ">
+                       <input class="form-check-input resize1" type="radio" id="Radio2" name="Radio" checked="">
+                       <label class="form-check-label resize" for="Radio2">
+                            Or Toggle this other custom radio
+                       </label>
+                  </div>
+                  <label>Inline</label><br>
+                  <div class="form-check ">
+             
+     
+                       <input class="form-check-input resize1" type="radio" id="Radio3" name="Radio" onclick="popup1()">
+                       <label class="form-check-label resize" for="Radio3">
+                            Toggle this custom radio 
+                       </label>
+                  </div>
+                  <div class="form-check ">
+                       <input class="form-check-input resize1" type="radio" id="Radio4" name="Radio" checked="">
+                       <label class="form-check-label resize" for="Radio4">
+                            Or Toggle this other custom radio
+                       </label>
+                  </div>
+                  <label>Disabled</label><br>
+                  <div class="form-check">
+                       
+                       <div class="disable">
+                           <input class="form-check-input resize1" type="radio" id="Radio5" name="Radio" disabled="">
+                            <label class="form-check-label resize" for="Radio5 flexRadioCheckedDisabled " disabled="">
+                                 Toggle this custom radio &nbsp; &nbsp;
+                            </label>
+     
+     
+                            <input class="form-check-input resize1" id="default" type="radio" name="Radio" disabled="">
+                            <label class="form-check-label resize" for="Radio6 flexRadioCheckedDisabled" disabled="">
+                                 &nbsp; Or Toggle this other custom radio
+                            </label>
+     
+                       </div>
+                  </div>
+                               <label>Colors</label><br>
+     <!--Form layout-->
+                  <div class="form-check">
+                       <!-- here comes radio button popup action alert message for default radio button-->
+                            <label class="form-check-label resize " for="default ">
+                            Default Radio
+                            </label>
+                     <input class="form-check-input resize " id="default" type="radio" name="Radio" checked="checked" onclick="popup1()"><br>
+                            <label class="form-check-label resize" for="success ">
+                                 Success Radio
+                            </label>
+                            <input class="form-check-input resize" id="success" type="radio" name="Radio" checked=""><br>
+                            <label class="form-check-label resize" for="info ">
+                                  Info Radio
+                            </label>
+                            <input class="form-check-input resize" type="radio" id="info" name="Radio" checked=""><br>
+                            <label class="form-check-label resize" for="secondary ">
+                                 Secondary Radio
+                            </label>
+                            <input class="form-check-input resize" type="radio" id="secondary" name="Radio" checked=""><br>
+                            <label class="form-check-label resize" for="warning">
+                                 Warning Radio
+                            </label>
+                            <input class="form-check-input resize" type="radio" id="warning" name="Radio" checked=""><br>
+                            <label class="form-check-label resize" for="danger">
+                     Danger Radio</label>
+                            <input class="form-check-input resize" type="radio" id="danger" name="Radio" checked=""><br>
+     
+                            
+            </div>
+        
+        <div class="col-10">
+             <button class="btn-primary submit">Submit</button>
+     
+             </div>
+          </div>
+         
+     </div>  
+     
+      </body>  
+ </html>  
+ <script>  
+ $(document).ready(function(){  
+      $('#data-table').DataTable({  
+           "ajax"     :     "data.json",  
+           "columns"     :     [  
+                {     "data"     :     "OrderId"     },  
+                {     "data"     :     "Customers"},  
+                {     "data"     :     "Project"}, 
+                {     "data"     :     "Date Order"},
+                {     "data"     :     "Address"},
+                {     "data"     :     "OrderStatus"},
+                {     "data"     :     "Action"},
+                
+           ]  
+      });  
+ });  
+/* $(document).ready(function(){  
+     
+           $.getJSON("data.json", function(data){  
+                $.each(data, function(key, value){  
+                     $("table").append("<tr><td>"+value.OrderId+"</td></tr>");  
+                });  
+          
+ });  */
+ </script>  
+
+ 
